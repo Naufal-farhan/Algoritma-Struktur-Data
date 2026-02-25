@@ -18,5 +18,6 @@ public class DosenMain20 {
         Dosen20 dosen2 = new Dosen20("21412551","ASEP HARUZO",false,2013,
         "PROGRAMMING");
         dosen2.tampilkanInformasi();
+        
     }
 }

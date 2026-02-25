@@ -24,9 +24,7 @@ public class Dosen20 {
     void ubahKeahlian(String bidang){
         bidangKeahlian = bidang;
     }
-
     public Dosen20(){
-
     }
     public Dosen20(String idDosen, String nama, boolean status, int tahunBergabung, String bidangKeahlian){
         this.idDosen = idDosen;
