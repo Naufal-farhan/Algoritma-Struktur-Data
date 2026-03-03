@@ -5,7 +5,6 @@ import Praktikum.Pertemuan2.mahasiswa20;
 public class MahasiswaDemo20 {
     public static void main(String[] args) {
         Mahasiswa20[] arrayOfMahasiswa20 = new Mahasiswa20[3];
-
         arrayOfMahasiswa20[0] = new Mahasiswa20();
         arrayOfMahasiswa20[0].nim = "1412141441";
         arrayOfMahasiswa20[0].nama = "Agnes Titanina Kinanti";
