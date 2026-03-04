@@ -24,8 +24,17 @@ public class MatakuliahDemo20 {
             dummy = sc.nextLine();
             jumlahJam = Integer.parseInt(dummy);
             System.out.println("------------------------------------------");
-
+            
             arrayOfMatakuliah20[i] = new Matakuliah20(code, nama, sks, jumlahJam);
+        }
+        
+        for(int i = 0; i<3 ; i++){
+            System.out.println("Data Matakuliah ke-" + (i + 1) + " : ");
+            System.out.println("KODE             : "+arrayOfMatakuliah20[i].code);
+            System.out.println("NAMA             : "+arrayOfMatakuliah20[i].nama);
+            System.out.println("SKS              : "+arrayOfMatakuliah20[i].sks);
+            System.out.println("JUMLAH JAM       : "+arrayOfMatakuliah20[i].jumlahJam);
+            System.out.println("------------------------------------------");
         }
     }
 }
