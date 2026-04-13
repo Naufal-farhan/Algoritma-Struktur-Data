@@ -41,5 +41,8 @@ public class MahasiswaDemo20 {
         System.out.println("DARA MAHASISWA SETELAH SORTING BERDASARKAN IPK MENGGUNAKAN SELECTION SORT(ASC)");
         list.selectionSort();
         list.tampil();
+        System.out.println("DARA MAHASISWA SETELAH SORTING BERDASARKAN IPK MENGGUNAKAN INSERTION SORT(ASC)");
+        list.insertionSort();
+        list.tampil();
     }
     }
