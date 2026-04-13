@@ -35,13 +35,13 @@ public class MahasiswaDemo20 {
         System.out.println("DATA MAHASISWA SEBELUM SORTING : ");
         list.tampil();
 
-        System.out.println("DARA MAHASISWA SETELAH SORTING BERDASARKAN IPK MENGGUNAKAN BUBBLE SORT(DESC)");
+        System.out.println("DATA MAHASISWA SETELAH SORTING BERDASARKAN IPK MENGGUNAKAN BUBBLE SORT(DESC)");
         list.bubleSort();
         list.tampil();
-        System.out.println("DARA MAHASISWA SETELAH SORTING BERDASARKAN IPK MENGGUNAKAN SELECTION SORT(ASC)");
+        System.out.println("DATA MAHASISWA SETELAH SORTING BERDASARKAN IPK MENGGUNAKAN SELECTION SORT(ASC)");
         list.selectionSort();
         list.tampil();
-        System.out.println("DARA MAHASISWA SETELAH SORTING BERDASARKAN IPK MENGGUNAKAN INSERTION SORT(ASC)");
+        System.out.println("DATA MAHASISWA SETELAH SORTING BERDASARKAN IPK MENGGUNAKAN INSERTION SORT(DSC)");
         list.insertionSort();
         list.tampil();
     }
