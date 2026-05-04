@@ -4,38 +4,39 @@ public class StackTugasMahasiswa20 {
     Mahasiswa20[] stack;
     int size, top;
 
-    StackTugasMahasiswa20(int size){
+    StackTugasMahasiswa20(int size) {
         this.size = size;
         stack = new Mahasiswa20[size];
         top = -1;
     }
 
-    boolean isFull(){
-        if (top == size -1){
+    boolean isFull() {
+        if (top == size - 1) {
             return true;
         } else {
             return false;
         }
     }
 
-    boolean isEmpty(){
-        if (top == -1){
+    boolean isEmpty() {
+        if (top == -1) {
             return true;
         } else {
             return false;
         }
     }
 
-    public void push(Mahasiswa20 mhs){
-        if(!isFull()){
+    public void push(Mahasiswa20 mhs) {
+        if (!isFull()) {
             top++;
             stack[top] = mhs;
-        } else{
+        } else {
             System.out.println("Stack Penuh, tidak bisa menambahkan tugas lagi!!.");
         }
     }
-    public Mahasiswa20 pop(){
-        if(!isEmpty()){
+
+    public Mahasiswa20 pop() {
+        if (!isEmpty()) {
             Mahasiswa20 m = stack[top];
             top--;
             return m;
@@ -44,16 +45,26 @@ public class StackTugasMahasiswa20 {
             return null;
         }
     }
-    public Mahasiswa20 peek(){
-        if(!isEmpty()){
+
+    public Mahasiswa20 peek() {
+        if (!isEmpty()) {
             return stack[top];
-        } else{
+        } else {
             System.out.println("Stack Kosong, tidak ada tugas untuk dilihat!!..");
             return null;
         }
     }
-    public void print(){
-        for(int i = 0; i < stack.length; i++){
+    public Mahasiswa20 peekBot() {
+        if (!isEmpty()) {
+            return stack[0];
+        } else {
+            System.out.println("Stack Kosong, tidak ada tugas untuk dilihat!!..");
+            return null;
+        }
+    }
+
+    public void print() {
+        for (int i = 0; i < stack.length; i++) {
             System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
         }
         System.out.println("");
