@@ -6,14 +6,12 @@ public class Queue {
 
     public Queue() {
     }
-
     public Queue(int n) {
         this.max = n;
         data = new int[max];
         size = 0;
         front = rear = -1;
     }
-
     boolean isEmpty() {
         if (size == 0) {
             return true;
@@ -21,7 +19,6 @@ public class Queue {
             return false;
         }
     }
-
     boolean isFull() {
         if (size == max) {
             return true;
@@ -29,7 +26,6 @@ public class Queue {
             return false;
         }
     }
-
     public void peek() {
         if (!isEmpty()) {
             System.out.println("Elemen terdepan = " + data[front]);
@@ -37,7 +33,6 @@ public class Queue {
             System.out.println("Queue Masih Kosong!!!..");
         }
     }
-
     public void print() {
         if (isEmpty()) {
             System.out.println("Queue Masih Kosong");
@@ -51,7 +46,6 @@ public class Queue {
             System.out.println("Jumlah Elemen = " + size);
         }
     }
-
     public void clear() {
         if (!isEmpty()) {
             front = rear = -1;
@@ -61,10 +55,10 @@ public class Queue {
             System.out.println("Queue masih kosong!!...");
         }
     }
-
     public void Enqueue(int dt) {
         if (isFull()) {
-            System.out.println("Queue sudah penuh");
+            System.out.println("Queue sudah penuh, Program dihentikan");
+            System.exit(1);
         } else {
             if (isEmpty()) {
                 front = rear = 0;
@@ -79,11 +73,11 @@ public class Queue {
             size++;
         }
     }
-
     public int Dequeue() {
         int dt = 0;
         if (isEmpty()) {
-            System.out.println("Queue Masih Kosong!!..");
+            System.out.println("Queue Masih Kosong, Program dihentikan!!..");
+            System.exit(1);
         } else {
             dt = data[front];
             size--;
