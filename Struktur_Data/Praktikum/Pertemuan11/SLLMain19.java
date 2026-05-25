@@ -11,9 +11,10 @@ public class SLLMain19 {
         String nim = sc.nextLine();
         System.out.print("Nama : ");
         String nama = sc.nextLine();
-        System.out.println("Kelas : ");
+        System.out.print("Kelas : ");
         String kelas = sc.nextLine();
-        double ipk = sc.nextInt();
+        System.out.print("IPK : ");
+        double ipk = sc.nextDouble();
         Mahasiswa19 mhs1 = new Mahasiswa19(nim, nama, kelas, ipk);
         
         Mahasiswa19 mhs2 = new Mahasiswa19("2", "Aurel", "1H", 3.1);
@@ -29,7 +30,17 @@ public class SLLMain19 {
         sll.insertAt(2, mhs2);
         sll.print();
 
+        System.out.println("Data Index-1 : ");
+        sll.getData(1);
+
+        System.out.println("data Mahasiswa an Aurel berada pada index" + sll.indexOf("Aurel"));
+        System.out.println();
         
+        sll.removeFirst();
+        sll.removeLast();
+        sll.print();
+        sll.removeAt(0);
+        sll.print();
     }
     
 }
